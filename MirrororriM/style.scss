@@ -1,0 +1,149 @@
+@charset"utf-8";
+html{
+    background-color: #F8F8F8;
+    font-size: 15px;
+    overflow-x: hidden;
+    letter-spacing: 0.05vw;
+}
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    header{
+        z-index: 99;
+        position: fixed;
+        width: calc(100vw - calc(100vw - 100%));
+        height: 10vh;
+        background-color: rgba(0,81,255,0.5);
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        div{
+            width: 70%;
+            height: 10vh;
+        }
+        ul{
+            width: 30%;
+            height: 10vh;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            
+            li{
+                
+                margin-top: auto;
+                margin-bottom: auto;
+                text-align: center;
+                color: #F8F8F8;
+                font-family: '黒薔薇シンデレラ';
+                font-size: 1.5em;
+            }
+        }
+        
+    }
+    main{
+        
+        #title_page{
+            height: 100vh;
+            width: 100vw;
+            background-image: url(image/MirrororriM_title.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            display: grid;
+            place-content: center;
+            p{
+                margin-top: 75vh;
+                background-color: aqua;
+                padding: 1rem 3rem;
+                border-radius: 20px;
+                color: #F8F8F8;
+                text-shadow: 0px -2px 5px #b3b3b3;
+                box-shadow: 0px -2px 5px #b3b3b3;
+                border: solid 1px #F8F8F8;
+                font-family: '黒薔薇シンデレラ';
+                font-size: 1.5em;
+                
+            }
+            .visual_hidden {
+                position: absolute;
+                clip: rect(1px, 1px, 1px, 1px);
+                -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+                clip-path: inset(0px 0px 99.9% 99.9%);
+                overflow: hidden;
+                height: 1px;
+                width: 1px;
+                padding: 0;
+                border: 0
+            }
+            
+        }
+        #concept_page{
+            height: 100vh;
+            width: calc(100vw - calc(100vw - 100%));
+            background-image: url(/image/stage01_background_03.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            #concept{
+                height: 40vh;
+                width: calc(100vw - calc(100vw - 100%));
+                display: flex;
+                flex-flow: column;
+                justify-content: space-evenly;
+                text-align: center;
+                h2{
+                    // margin-top: 10vh;
+                    color: #CCBEFF;
+                    font-size: 64px;
+                    -webkit-text-stroke-width: 1px;
+                    -webkit-text-stroke-color: #6121F5;
+                    font-family: '黒薔薇シンデレラ';
+                    letter-spacing: 0.2em;
+                }
+                p{
+                    font-size: 32px;
+                    font-family: '黒薔薇シンデレラ';
+                }
+                }
+                #clear_image{
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: flex-start;
+                    div{
+                        height: 50vh;
+                        width: 40%;
+                    }
+                    p{
+                        height: 50vh;
+                        width: 60%;
+                        img{
+                            height: 50vh;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+            }
+            dl{
+                height: 10vh;
+                width: 30%;
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                text-align: center;
+                background-color: red;
+                
+                dt{
+                    font-size: 24px;
+                    line-height: 1.6;
+                    font-family: '黒薔薇シンデレラ';
+                    letter-spacing: normal;
+                }
+                dd{
+                    line-height: 1.6;
+                    font-family: '黒薔薇シンデレラ';
+                    letter-spacing: 0.2em;
+                }
+            }
+        }
+    }
+}
